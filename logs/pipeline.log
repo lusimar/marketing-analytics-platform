@@ -8,3 +8,19 @@
 2026-05-10 12:00:10,576 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
 2026-05-10 12:00:10,594 - INFO - Arquivo Silver salvo: data/processed/meta_ads_silver_20260510_120010.csv
 2026-05-10 12:00:10,595 - INFO - Quantidade de linhas Silver: 1
+2026-05-13 17:26:22,614 - INFO - Iniciando camada Gold
+2026-05-13 17:26:22,615 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
+2026-05-13 17:26:22,626 - ERROR - Erro camada Gold: "Column(s) ['clicks', 'cpc', 'ctr'] do not exist"
+2026-05-13 17:29:02,749 - INFO - Iniciando camada Gold
+2026-05-13 17:29:02,750 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
+2026-05-13 17:29:02,753 - ERROR - Erro camada Gold: "Column(s) ['clicks', 'cpc', 'ctr'] do not exist"
+2026-05-13 17:29:25,986 - INFO - Iniciando camada Gold
+2026-05-13 17:29:25,986 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
+2026-05-13 17:29:25,999 - ERROR - Erro camada Gold: "Column(s) ['clicks', 'cpc', 'ctr'] do not exist"
+2026-05-13 17:30:33,448 - INFO - Iniciando camada Gold
+2026-05-13 17:30:33,448 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
+2026-05-13 17:30:33,467 - ERROR - Erro camada Gold: 'ctr'
+2026-05-13 17:32:06,053 - INFO - Iniciando camada Gold
+2026-05-13 17:32:06,054 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
+2026-05-13 17:32:06,064 - INFO - Gold criada com sucesso: data/gold/meta_ads_gold_20260513_173206.csv
+2026-05-13 17:32:06,064 - INFO - Quantidade linhas Gold: 1
