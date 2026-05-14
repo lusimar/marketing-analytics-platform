@@ -1,0 +1,2 @@
+account_id,impressions,clicks,spend,ctr,cpc,reach,frequency,actions,date_start,date_stop
+1005340005177556,479,5,9.79,1.043841,1.958,327,1.464832,"[{'action_type': 'link_click', 'value': '2'}, {'action_type': 'page_engagement', 'value': '4'}, {'action_type': 'post_engagement', 'value': '4'}, {'action_type': 'post_interaction_gross', 'value': '2'}, {'action_type': 'post_interaction_net', 'value': '2'}, {'action_type': 'onsite_conversion.post_net_like', 'value': '2'}, {'action_type': 'post_reaction', 'value': '2'}]",2026-04-14,2026-05-13

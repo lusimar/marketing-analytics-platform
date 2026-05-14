@@ -24,3 +24,40 @@
 2026-05-13 17:32:06,054 - INFO - Arquivo Silver encontrado: data/processed\meta_ads_silver_20260510_120010.csv
 2026-05-13 17:32:06,064 - INFO - Gold criada com sucesso: data/gold/meta_ads_gold_20260513_173206.csv
 2026-05-13 17:32:06,064 - INFO - Quantidade linhas Gold: 1
+2026-05-13 19:31:41,111 - INFO - Iniciando extração de dados de Meta Ads
+2026-05-13 19:31:41,598 - ERROR - Erro ao obter dados: {'error': {'message': 'Error validating access token: Session has expired on Saturday, 09-May-26 11:00:00 PDT. The current time is Wednesday, 13-May-26 15:31:42 PDT.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 463, 'fbtrace_id': 'AJj0VDsKTZjYQijhTKLpeIS'}}
+2026-05-13 19:31:41,598 - ERROR - Erro na extração de dados de Meta Ads: Erro ao obter dados de Meta Ads
+2026-05-13 19:32:59,724 - INFO - Iniciando extração de dados de Meta Ads
+2026-05-13 19:33:00,636 - INFO - Dados de Meta Ads salvos com sucesso em data/meta_ads_insights_20260513_193300.csv
+2026-05-13 19:33:00,636 - INFO - Total de registros extraídos: 1
+2026-05-14 17:50:10,294 - INFO - Iniciando extração de dados de Meta Ads
+2026-05-14 17:50:11,279 - INFO - Dados de Meta Ads salvos com sucesso em data/meta_ads_insights_20260514_175011.csv
+2026-05-14 17:50:11,279 - INFO - Total de registros extraídos: 1
+2026-05-14 18:04:50,221 - INFO - Iniciando transformação Silver
+2026-05-14 18:04:50,222 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
+2026-05-14 18:04:50,245 - INFO - Arquivo Silver salvo: data/processed/meta_ads_silver_20260514_180450.csv
+2026-05-14 18:04:50,245 - INFO - Quantidade de linhas Silver: 1
+2026-05-14 18:04:54,553 - INFO - Iniciando transformação Silver
+2026-05-14 18:04:54,553 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
+2026-05-14 18:05:28,769 - INFO - Iniciando transformação Silver
+2026-05-14 18:05:28,769 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
+2026-05-14 18:05:57,034 - INFO - Iniciando transformação Silver
+2026-05-14 18:05:57,034 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
+2026-05-14 18:06:26,856 - INFO - Iniciando transformação Silver
+2026-05-14 18:06:26,857 - INFO - Arquivo Bronze encontrado: data/raw\meta_ads_20260509_140733.csv
+2026-05-14 18:07:08,163 - INFO - Iniciando transformação Silver
+2026-05-14 18:09:33,482 - INFO - Iniciando transformação Silver
+2026-05-14 18:14:49,717 - INFO - Iniciando transformação Silver
+2026-05-14 18:16:14,249 - INFO - Iniciando extração de dados de Meta Ads
+2026-05-14 18:16:14,768 - INFO - Dados de Meta Ads salvos com sucesso em data/raw/meta_ads_insights_20260514_181614.csv
+2026-05-14 18:16:14,768 - INFO - Total de registros extraídos: 1
+2026-05-14 18:16:29,873 - INFO - Iniciando transformação Silver
+2026-05-14 18:19:05,448 - INFO - Iniciando transformação Silver
+2026-05-14 18:19:05,449 - INFO - Arquivo encontrado: data/raw\meta_ads_insights_20260514_181614.csv
+2026-05-14 18:19:31,120 - INFO - Iniciando transformação Silver
+2026-05-14 18:19:31,121 - INFO - Arquivo encontrado: data/raw\meta_ads_insights_20260514_181614.csv
+2026-05-14 18:19:31,124 - ERROR - Erro na camada Silver: cannot do positional indexing on RangeIndex with these indexers [<built-in function all>] of type builtin_function_or_method
+2026-05-14 18:20:17,881 - INFO - Iniciando transformação Silver
+2026-05-14 18:20:17,882 - INFO - Arquivo encontrado: data/raw\meta_ads_insights_20260514_181614.csv
+2026-05-14 18:34:30,231 - INFO - Iniciando transformação Silver
+2026-05-14 18:34:30,236 - INFO - Arquivo encontrado: data/raw\meta_ads_insights_20260514_181614.csv

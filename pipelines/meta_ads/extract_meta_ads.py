@@ -28,7 +28,21 @@ try:
     #parâmetros para a requisição
     params = {
         "access_token": ACESS_TOKEN,
-        "filds": "campaign_name,impressions,clicks,spend,cpc,ctr",
+        "fields": """
+            account_id,
+            campaign_name,
+            impressions,
+            clicks,
+            spend,
+            ctr,
+            cpc,
+            reach,
+            frequency,
+            actions,
+            action_values,
+            date_start,
+            date_stop
+            """.replace("\n", ""),
         "date_preset": "last_30d"
     }
 
@@ -54,7 +68,7 @@ try:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
         #cominho para salvar o arquivo
-        output_path = f"data/meta_ads_insights_{timestamp}.csv"
+        output_path = f"data/raw/meta_ads_insights_{timestamp}.csv"
         #salvar o arquivo
         df.to_csv(output_path, index=False)
         logging.info(f"Dados de Meta Ads salvos com sucesso em {output_path}")

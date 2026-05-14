@@ -3,6 +3,7 @@ import glob
 import os
 import logging
 from datetime import datetime
+import ast
 
 # Config logs
 logging.basicConfig(
@@ -17,53 +18,21 @@ try:
 
     # Busca arquivo mais recente da Bronze
     files = glob.glob("data/raw/*.csv")
+    last_file = max(files, key=os.path.getmtime)
+     
+    logging.info(f"Arquivo encontrado: {last_file}")
 
-    latest_file = max(files, key=os.path.getctime)
+    #lendo CSV
+    df = pd.read_csv(last_file)
 
-    logging.info(f"Arquivo Bronze encontrado: {latest_file}")
+    #mostrar todas as colunas
+    if "actions" in df.columns:
+        
+        df["actions"] = df["actions"].fillna("[]")
 
-    # Ler CSV
-    df = pd.read_csv(latest_file)
-
-    # Remove duplicados
-    df = df.drop_duplicates()
-
-    # Tratar nulos
-    df = df.fillna(0)
-
-    # Conversões
-    numeric_columns = [
-        "impressions",
-        "clicks",
-        "spend",
-        "cpc",
-        "ctr"
-    ]
-
-    for col in numeric_columns:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
-
-    # Datas
-    if "date_start" in df.columns:
-        df["date_start"] = pd.to_datetime(df["date_start"])
-
-    if "date_stop" in df.columns:
-        df["date_stop"] = pd.to_datetime(df["date_stop"])
-
-    # Timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
-    # Output
-    output_path = f"data/processed/meta_ads_silver_{timestamp}.csv"
-
-    # Salvar
-    df.to_csv(output_path, index=False)
-
-    logging.info(f"Arquivo Silver salvo: {output_path}")
-    logging.info(f"Quantidade de linhas Silver: {len(df)}")
-
-    print(df.head())
+        #Convertendo string para lista
+        df["actions"] = df["actions"].apply(ast.literal_eval)
+        print(df["actions"].head())
 
 except Exception as e:
 
